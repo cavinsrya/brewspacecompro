@@ -8,7 +8,7 @@ export default function OurProcess() {
       title: "How to Crafting the Perfect Cup of Coffee",
       description: "Ini adalah isi dari Card 1.",
       image_url:
-        "https://cdn.discordapp.com/attachments/1348529687877648406/1348584862105468968/premium_photo-1670758291967-25ed2e90f21e_1.png?ex=67cfff06&is=67cead86&hm=2a53e12a33b8f99fc9480d91e9fdd90b3804e2ea5949b706cc38af2434428d34&",
+        "https://media.discordapp.net/attachments/1348529687877648406/1348584862105468968/premium_photo-1670758291967-25ed2e90f21e_1.png?ex=67d2a206&is=67d15086&hm=577dc2cf43876f76d8e17eed6697eeef6121b8e9a167327b086d124d035056b7&=&format=webp&quality=lossless",
     },
     {
       title: "Roasted to Perfection",
@@ -24,7 +24,7 @@ export default function OurProcess() {
       title: "Card 3",
       description: "Isi dari Card 3.",
       image_url:
-        "https://cdn.discordapp.com/attachments/1348529687877648406/1348584800302272554/image.png?ex=67cffef7&is=67cead77&hm=be4df35d5ae2513eb9f6f48b5997a3d639ffda22099e8a40a9931e24b0c105e1&",
+        "https://media.discordapp.net/attachments/1348529687877648406/1348584800302272554/image.png?ex=67d2a1f7&is=67d15077&hm=2ad5fa3b312b4c4fc25ef84878237390e70f07b8e86ad44f0f20878416dd10a8&=&format=webp&quality=lossless",
     },
   ];
   return (
