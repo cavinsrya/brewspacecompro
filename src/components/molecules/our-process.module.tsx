@@ -1,4 +1,3 @@
-import { fetchData } from "@/lib/backendless";
 import Image from "next/image";
 
 import React from "react";

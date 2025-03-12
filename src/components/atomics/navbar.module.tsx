@@ -37,7 +37,7 @@ export default function Navbar() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
-            <a href="/">
+            <Link href="/">
               <Image
                 src="/logonav.png"
                 alt="Company Logo"
@@ -45,7 +45,7 @@ export default function Navbar() {
                 height={50}
                 className="object-contain"
               />
-            </a>
+            </Link>
 
             {/* Menu Desktop */}
             <div className="hidden md:flex space-x-6">
