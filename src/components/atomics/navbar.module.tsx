@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
   const isHome = pathname === "/";
 
@@ -35,6 +36,7 @@ export default function Navbar() {
       >
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-between items-center py-4">
+            {/* Logo */}
             <a href="/">
               <Image
                 src="/logonav.png"
@@ -69,14 +71,51 @@ export default function Navbar() {
               </Link>
             </div>
 
-            {/* Mobile Menu */}
+            {/* Mobile Menu Button */}
             <button
-              className={`md:hidden ${
-                isHome && !isScrolled ? "text-white" : "text-black"
-              }`}
+              className="md:hidden text-black"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              <Menu size={24} />
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        <div
+          className={`md:hidden absolute top-22 left-0 w-full bg-white shadow-md transition-all duration-300 ${
+            isMenuOpen ? "block" : "hidden"
+          }`}
+        >
+          <div className="flex flex-col space-y-4 p-4">
+            <Link
+              href="/"
+              className="text-black hover:text-[#26A86E]"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Home
+            </Link>
+            <Link
+              href="/about"
+              className="text-black hover:text-[#26A86E]"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About
+            </Link>
+            <Link
+              href="/products"
+              className="text-black hover:text-[#26A86E]"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Products
+            </Link>
+            <Link
+              href="/teams"
+              className="text-black hover:text-[#26A86E]"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Teams
+            </Link>
           </div>
         </div>
       </nav>
