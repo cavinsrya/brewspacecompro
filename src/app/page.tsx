@@ -1,5 +1,3 @@
-import { fetchData } from "@/lib/backendless";
-
 import Banner from "@/components/molecules/banner.module";
 import Partners from "@/components/molecules/partner.module";
 import Landing from "@/components/molecules/landing.module";

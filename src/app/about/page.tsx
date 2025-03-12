@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function AboutUs() {
@@ -34,14 +35,14 @@ export default function AboutUs() {
             <h3 className="text-4xl font-extrabold text-[#24AA6F]">
               Contact Me
             </h3>
-            <a
+            <Link
               href="https://wa.me/6285156736505"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 flex items-center justify-center bg-white text-black border-2 border-black rounded-full hover:bg-gray-800 hover:text-white transition"
             >
               →
-            </a>
+            </Link>
           </div>
         </div>
 
